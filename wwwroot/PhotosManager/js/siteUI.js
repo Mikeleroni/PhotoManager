@@ -621,7 +621,6 @@ function updateHeader(title, type, user) {
         });
     }
     else if (type == "photoManagerProfil" || type == "modifierProfil" || type == "deleteAccount" || type == "aboutUser") {
-        //Changer le HREF lorsqu'il est déployé sur glitch!!!!!!!************
         $('#header').append($(`
             <img id='photoTitleContainer' src='./favicon.ico' /><h2>${title}</h2>
 
@@ -644,26 +643,6 @@ function updateHeader(title, type, user) {
                     <i class="menuIcon fa fa-image mx-2"></i> Liste des photos
                 </div>
                 <div class="dropdown-divider"></div>
-                <span class="dropdown-item" id="sortByDateCmd">
-                    <i class="menuIcon fa fa-fw mx-2"></i>
-                    <i class="menuIcon fa fa-calendar mx-2"></i>
-                     Photos par date de création
-                </span>
-                <span class="dropdown-item" id="sortByOwnersCmd">
-                <i class="menuIcon fa fa-fw mx-2"></i> 
-                <i class="menuIcon fa fa-users mx-2"></i>
-                    Photos par créateur
-                </span>
-                <span class="dropdown-item" id="sortByLikesCmd">
-                <i class="menuIcon fa fa-fw mx-2"></i> 
-                <i class="menuIcon fa fa-heart mx-2"></i>
-                    Photos les plus aimées
-                </span>
-                <span class="dropdown-item" id="ownerOnlyCmd">
-                <i class="menuIcon fa fa-fw mx-2"></i> 
-                <i class="menuIcon fa fa-user mx-2"></i>
-                    Mes photos
-                </span>
                 <div class="dropdown-item" id="aboutCmd">
                     <i class="menuIcon fa fa-info-circle mx-2"></i> À propos...
                 </div>
@@ -741,26 +720,6 @@ function updateHeader(title, type, user) {
                     <i class="menuIcon fa fa-image mx-2"></i> Liste des photos
                 </div>
                 <div class="dropdown-divider"></div>
-                <span class="dropdown-item" id="sortByDateCmd">
-                    <i class="menuIcon fa fa-fw mx-2"></i>
-                    <i class="menuIcon fa fa-calendar mx-2"></i>
-                     Photos par date de création
-                </span>
-                <span class="dropdown-item" id="sortByOwnersCmd">
-                    <i class="menuIcon fa fa-fw mx-2"></i>
-                    <i class="menuIcon fa fa-users mx-2"></i>
-                    Photos par créateur
-                </span>
-                <span class="dropdown-item"  id="sortByLikesCmd">
-                <i class="menuIcon fa fa-fw mx-2"></i> 
-                <i class="menuIcon fa fa-heart mx-2"></i>
-                    Photos les plus aimées
-                </span>
-                <span class="dropdown-item" id="ownerOnlyCmd">
-                    <i class="menuIcon fa fa-fw mx-2"></i>
-                    <i class="menuIcon fa fa-user mx-2"></i>
-                    Mes photos
-                </span>
                 <div class="dropdown-item" id="aboutCmd">
                     <i class="menuIcon fa fa-info-circle mx-2"></i> À propos...
                 </div>
